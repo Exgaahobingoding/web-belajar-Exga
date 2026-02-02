@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandkita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+<!-- NAVBAR -->
+
+        <nav class="bg-slate-800 text-white fixide w-full top-0 z-50">
+        </nav>
+ 
+<header>
+    <nav class="flex justify-between items-center p-6 bg-slate-800 text-white">
+        <div class="text-xl font-bold">My Trip</div>
+
+        <button id="menu-btn" class="md:hidden">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+      <!--dekstop-->
+        <ul class="hidden md:flex gap-6">
+            <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+            <li><a href="#tentang" class="hover:text-red-400">Tentang</a></li>
+            <li><a href="#portofolio" class="hover:text-green-400">Portofolio</a></li>
+            <li><a href="#kontak" class="hover:text-blue-400">Kontak</a></li>
+             <li><a href="loginn.html" class="hover:text-pink-400">login</a></li>
+        </ul>
+    </nav>
+     <!--menu mobile-->
+    <div id="menu" class="hidden bg-slate-800 text-white px-6 py-4 md:hidden">
+        <ul class="flex flex-col gap-4">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="home"
+class="bg-[url('img/image.jpg')] bg-cover bg-center h-[80vh] flex flex-col justify-center items-center text-center px-4">
+
+    <div class="absolute insert-0 bg-black/70"></div>
+
+    <div class="relative z-10"></div>
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">
+        Selamat Datang di Website Trip Kami
+    </h1>
+    <p class="text-white mb-4">Halaman ini adalah halaman utama</p>
+    <div class="flex flex-col items-center">
+    <button class="bg-blue-600 hover:bg-blue-800 text-white px-7 py-2 rounded-lg font-semibold">
+        Lihat Layanan 
+    </button>
+
+     <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm text-white">
+        <div>
+            <span class="font-bold text-white">50+</span> Project selesai
+        </div>
+        <div>
+            <span class="font-bold text-white">10+</span> Client
+        </div>
+        <div>
+            <span class="font-bold text-white">3+</span> Tahun Pengalaman
+            </div>
+        </div>
+      </div>
+</section>
+<!-- ABOUT US -->
+<section id="tentang" class="px-6 py-16 bg-white">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+    <div>
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-gray-600">
+        Gunung menjulang tinggi dengan keindahan yang tenang.
+        Di setiap lerengnya tersimpan keteduhan, udara segar,
+        dan ketenangan yang sulit ditemukan di kota
+      </p>
+
+      <h2 class="text-3xl font-bold mt-6 mb-4">Visi Kami</h2>
+      <p class="text-gray-700 mb-4">
+        Menjadikan gunung sebagai kawasan alam yang lestari, indah, dan bermanfaat bagi kehidupan manusia serta generasi masa depan.
+      </p>
+    </div>
+
+    <div class="bg-gray-100 p-8 rounded-xl shadow">
+      <h3 class="text-xl font-semibold mb-2">Rate Gunung</h3>
+      <ul class="space-y-2 text-gray-700">
+        <li>✅ indah</li>
+        <li>✅ indah</li>
+        <li>✅ indah</li>
+        <li>✅ indah</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="px-6 py-16 bg-gray-100">
+  <a href="#about"></a>
+  <h2 class="text-3xl font-bold text-center mb-10">Layanan Kami</h2>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <div class="bg-white p-8 rounded-xl shadow transition hover:shadow-xl hover:-translate-y-1">
+      <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-blue-100 text-blue-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+      <p class="text-gray-600">
+        Pembuatan website cepat, aman, dan responsif sesuai kebutuhan bisnis.
+      </p>
+    </div>
+
+    <div class="bg-white p-8 rounded-xl shadow transition hover:shadow-xl hover:-translate-y-1">
+      <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-purple-100 text-purple-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9.75 17L3 21l4-7.25M14.25 17L21 21l-4-7.25M12 3v10" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">UI / UX Design</h3>
+      <p class="text-gray-600">
+        Desain antarmuka yang nyaman digunakan dan meningkatkan konversi.
+      </p>
+    </div>
+
+    <div class="bg-white p-8 rounded-xl shadow transition hover:shadow-xl hover:-translate-y-1">
+      <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-green-100 text-green-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Maintenance</h3>
+      <p class="text-gray-600"></p>
+    </div>
+
+  </div>
+</section>
+
+<section id="portofolio" class="py-16 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Portofolio</h2>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">
+        <img src="img/fuji.jpeg" class="h-40 w-full object-cover rounded mb-3">
+        <h3 class="font-semibold">Gunung Fuji adalah gunung tertinggi di Jepang dengan ketinggian sekitar 3.776 mdpl. Gunung ini terkenal dengan bentuknya yang simetris dan puncaknya yang sering diselimuti salju. Fuji bukan hanya ikon alam, tetapi juga simbol budaya dan spiritual masyarakat Jepang. Keindahannya menjadikan Gunung Fuji salah satu gunung paling terkenal di dunia dan warisan budaya UNESCO</h3>
+        <p class="text-sm text-gray-600">Company Profile</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">
+        <img src="img/Gunung Gede.jpeg" class="h-40 w-full object-cover rounded mb-3">
+        <h3 class="font-semibold">Gunung Gede terletak di kawasan Taman Nasional Gunung Gede Pangrango. Gunung ini dikenal dengan hutan hujan tropis yang lebat, udara sejuk, serta keanekaragaman flora dan fauna yang tinggi. Gunung Gede juga memiliki kawah aktif dan padang edelweiss yang indah, menjadikannya destinasi favorit pendaki dan pecinta alam.</h3>
+        <p class="text-sm text-gray-600">Landing Page</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">
+        <img src="img/Rinjani.jpeg" class="h-40 w-full object-cover rounded mb-3">
+        <h3 class="font-semibold">Gunung Rinjani adalah gunung berapi tertinggi kedua di Indonesia dengan ketinggian sekitar 3.726 mdpl. Gunung ini terkenal dengan Danau Segara Anak yang berada di kawahnya, menciptakan pemandangan alam yang sangat menakjubkan. Rinjani melambangkan keindahan sekaligus tantangan, karena jalur pendakiannya yang panjang dan medan yang cukup berat.</h3>
+        <p class="text-sm text-gray-600">Web Portfolio</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">
+        <img src="img/Merbabu.jpeg" class="h-40 w-full object-cover rounded mb-3">
+        <h3 class="font-semibold">Gunung Merbabu dikenal dengan padang savana yang luas dan pemandangan alam terbuka yang memukau. Dari puncaknya, pendaki dapat melihat Gunung Merapi, Sindoro, dan Sumbing dengan jelas. Jalur pendakian Merbabu relatif ramah, sehingga cocok untuk pendaki pemula yang ingin menikmati keindahan pegunungan tanpa medan ekstrem.</h3>
+        <p class="text-sm text-gray-600">Website Modern</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+     <!--Card-->
+     <div class="bg-white rounded-xl shadow overflow-hidden transitionhover:shadow-xl hover:-transition y-1">
+        <img src="img/mountain web.webp" alt="Company Profile website" class="w-full h-45 object-cover">
+     </div> 
+
+    <!-- KONTAK -->
+     <section id="contact" class="px-6 py-16 bg-white">
+  <h2 class="text-3xl font-bold text-center mb-10">Kontak Kami</h2>
+
+  <form name="nameForm" onsubmit="return validateForm()" method="post"
+            class="max-w-xl mx-auto bg-gray-100 p-8 rounded-xl shadow space-y-4">
+            <input name="name" type="text" placeholder="Nama"
+                class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+
+
+            <input name="email" type="email" placeholder="Email"
+                class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+
+
+            <textarea rows="4" placeholder="Pesan"
+                class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"></textarea>
+
+
+            <button type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white py-3 rounded-lg font-semibold transition">
+                Kirim Pesan
+            </button>
+        </form>
+     
+
+
+
+<!-- FOOTER -->
+<footer class="bg-slate-800 text-white text-center py-4">
+    <p>&copy; 2026 Brandkita. Semua hak dilindungi.</p>
+</footer>
+
+<!-- SCRIPT MENU -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  }
+</script>
+
+<script>
+        function validateForm() {
+            let nama = document.forms["nameForm"]["name"].value;
+            let email = document.forms["nameForm"]["email"].value;
+
+
+            if (nama == "") {
+                alert("Kolom nama harus diisi");
+                return false;
+            }
+
+
+            if (email == "") {
+                alert("Kolom email harus diisi");
+                return false;
+            }
+        }
+    </script>
+
+    <script>
+        document.forms["nameForm"].addEventListener("submit", function (e) {
+            if (validateForm() === false) {
+                e.preventDefault();
+                return;
+            }
+
+
+            e.preventDefault();
+
+
+            const nama = document.forms["nameForm"]["name"].value;
+            const email = document.forms["nameForm"]["email"].value;
+            const pesan = document.forms["nameForm"].querySelector("textarea").value;
+
+
+            const data = {
+                nama: nama,
+                email: email,
+                pesan: pesan
+            };
+
+
+            let listData = JSON.parse(localStorage.getItem("pesan")) || [];
+            listData.push(data);
+            localStorage.setItem("pesan", JSON.stringify(listData));
+
+
+            document.forms["nameForm"].reset();
+        });
+    </script>
+</body>
+</html>
+

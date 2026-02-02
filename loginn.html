@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Container -->
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white p-6 rounded-md shadow-md w-80">
+            
+            <h2 class="text-2xl font-bold text-center mb-4">Login</h2>
+
+            <form action="" method="post" onsubmit="return validasilogin()">
+                
+                <!-- Username -->
+                <label for="username" class="block text-sm font-medium mb-1">
+                    Username
+                </label>
+                <input type="text" id="username" name="username"
+                    class="w-full border border-gray-300 rounded px-3 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    placeholder="Masukkan username" required>
+
+                <!-- Password -->
+                <label for="password" class="block text-sm font-medium mb-1">
+                    Password
+                </label>
+                <input type="password" id="password" name="password"
+                    class="w-full border border-gray-300 rounded px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    placeholder="Masukkan password" required>
+
+                <!-- Button -->
+                <button type="submit"
+                    class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded font-semibold">
+                    Login
+                </button>
+
+            </form>
+
+            <!-- Back -->
+            <a href="index.html"
+                class="block text-center mt-4 text-sm text-gray-600 hover:text-blue-500">
+                ← Kembali ke Beranda
+            </a>
+
+        </div>
+    </div>
+
+  
+<script>
+/// Saat login page dibuka, cek apakah sudah login
+window.onload = function() {
+    const auth = JSON.parse(localStorage.getItem("auth"));
+    if (auth && auth.isLogin === true) {
+        window.location.href = "data.html"; // otomatis ke data page
+    }
+}
+
+// Fungsi validasi login
+function validasilogin() {
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    const users = [
+        { username: "admin", password: "123" } // pastikan sama persis dengan input
+    ];
+
+    const foundUser = users.find(
+        user => user.username === username && user.password === password
+    );
+
+    if (foundUser) {
+        // Simpan status login
+        const authData = {
+            isLogin: true,
+            user: { username: foundUser.username },
+            loginTime: new Date().toISOString()
+        };
+        localStorage.setItem("auth", JSON.stringify(authData));
+
+        // Pindah ke data page
+        window.location.href = "data.html";
+
+        return false; // penting! cegah reload page
+    } else {
+        alert("salah");
+        return false; // tetap di login page jika salah
+    }
+}
+
+</script>
+</body>
+</html>
